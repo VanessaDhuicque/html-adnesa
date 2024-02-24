@@ -1,28 +1,15 @@
-document.addEventListener("DOMContentLoaded", function() {
-    const carousel = document.querySelector(".carousel-inner");
-    let carouselWidth = carousel.offsetWidth;
-    const card = document.querySelector(".carousel-item");
-    let cardWidth = card.clientWidth;
-    let scrollPosition = 0;
-    console.log(carousel, carouselWidth, card, cardWidth);
+let items = document.querySelectorAll('.carousel .carousel-item');
 
-    document.querySelector(".carousel-control-next").addEventListener("click", function() {
-            if (scrollPosition < carouselWidth - (cardWidth * 4)) {
-                scrollPosition = scrollPosition + cardWidth;
-                carousel.animate({scrollLeft: scrollPosition}, 600);
-            }
-        }
-    );
-
-    document.querySelector(".carousel-control-prev").addEventListener("click", function() {
-        if (scrollPosition > 0) {
-            scrollPosition = scrollPosition - cardWidth;
-            carousel.animate({scrollLeft: scrollPosition}, 600);
-
-        }
+items.forEach((el) => {
+    const minPerSlide = 3;
+    let next = el.nextElementSibling;
+    for (var i=1; i<minPerSlide; i++) {
+        if (!next) {
+            // wrap carousel by using first child
+        	next = items[0];
+      	}
+        let cloneChild = next.cloneNode(true);
+        el.appendChild(cloneChild.children[0]);
+        next = next.nextElementSibling;
     }
-);
 })
-
-
-
