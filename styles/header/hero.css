@@ -21,7 +21,7 @@
     
 }
 .hero-banner-content{
-    padding: 150px 50px;
+    padding: 50px 50px;
 }
 
 .btn-hero{
@@ -42,9 +42,9 @@
 
 .hero-section {
     position: relative;
-    padding-top: 200px; /* Adjust the padding to fit your image */
-    padding-bottom: 200px; /* Adjust the padding to fit your image */
-    background-color: #f3f3f3; /* Fallback color */
+    padding-top: 200px; 
+    padding-bottom: 200px; 
+    background-color: #f3f3f3; 
     
   } 
   
@@ -53,39 +53,68 @@
     top: 0;
     left: 0;
     height: 100%;
-    object-fit: cover; /* This will cover the entire section with your image */
+    object-fit: cover; 
   }
 
 /* hero accueil */
 
 .hero-section-accueil{
-    margin-top: 150px;
+   
     background-image: url("../../images/hero_accueil.png");
+    margin-top: 150px;
+    width: 100%;
+    height: auto;
     background-position: top right;
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: repeat-y;
+    
+    
 }
+@media screen and (max-width: 1200px) {
+    .hero-section-accueil {
+        background-color: var(--secondary-color);
+        background-image: none;
+      
+    }
+    
+}
+
 
 
 
 /* hero a propos */
 
-.hero-banner-content-a-propos{
-    padding: 250px 0 500px 0;
-    margin-left: 50px;
-}
-.text-accueil{
-    padding-top: 10px;
-}
+
 @media screen and (max-width: 576px) {
     .text-accueil{
         padding-top: 0;
     }
     
 }
-@media (max-width: 992px) {
-    .hero-section-toncompagnon + .animal-types .container {
-      margin-top: 300px; /* Adjust the top margin to push the container down in mobile version */
-    }
-  }
 
+
+  .hero-section-a-propos {
+    margin-top: 150px;
+    background-image: url("../../images/hero_apropos.png");
+    width: 100%;
+    height: auto;
+    background-position: top right;
+    background-size: cover;
+    background-repeat: no-repeat;    
+}
+@media screen and (max-width: 1200px) {
+    .hero-section-a-propos {
+        background-color: var(--secondary-color);
+        background-image: none;
+    }
+    
+}
+
+
+.statistique-position-adjusted {
+    position: absolute;
+    bottom: -63%; 
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10; 
+  }

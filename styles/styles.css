@@ -49,8 +49,7 @@ h3{
         }
     }
 
-.procedure, .adopt-pet, .container, .actuality  {
-    width: 100%;
+.procedure, .adopt-pet, .actuality  {
     max-width: 100%;
     padding-right: 0;
     padding-left: 0;
@@ -95,7 +94,7 @@ h3{
 }
 
 
-.hero-section-a-propos {
+/* .hero-section-a-propos {
 
     margin-top: 150px;
     background-image: url("../images/hero_apropos.png");
@@ -103,7 +102,7 @@ h3{
     background-size: cover;
     background-repeat: no-repeat;
     
-}
+} */
 
 
 /* .hero-section-accueil{
@@ -337,13 +336,16 @@ a.text-footer:hover {
     background-color:var(--secondary-color);
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     min-height: 200px; 
-    margin-bottom: 10rem; 
-    margin-top: 10rem;
-    bottom: -20px;
-    width: 100%;
+    z-index: -100;
+    /* bottom: -20px; */
+    /* width: 75%; */
     padding:2rem; 
-    
-   
+  }
+
+  @media screen and (max-width: 768px) {
+    .statistique{
+        z-index: 0; 
+    }
     
   }
 
@@ -523,3 +525,38 @@ a.text-footer:hover {
     margin-top: 300px; 
   }
 } */
+
+/* CAROUSEL A VOIR PLUS TARD
+
+.carousel-item {
+  display: none;
+}
+
+.carousel-item.active,
+.carousel-item-next,
+.carousel-item-prev {
+  display: block; 
+}
+
+@media (max-width: 767px) {
+  .carousel-item-next,
+  .carousel-item-prev {
+    display: none; 
+  }
+}
+
+@media (min-width: 768px) {
+  .carousel-inner {
+    display: flex;
+  }
+  .carousel-item {
+    display: block;
+    width: 33.333%;
+  }
+}
+
+FIN CAROUSEL */
+
+.card {
+  margin: 0 10px; /* Ajoute un peu d'espace entre les cartes */
+}

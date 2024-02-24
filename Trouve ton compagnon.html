@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/header/hero.css">
@@ -40,10 +40,10 @@
           <a class="nav-link" href="Trouve ton compagnon.html">Trouve ton compagnon</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#">Actualités</a>
+            <a class="nav-link" href="actualites.html">Actualités</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Soutenir</a>
+            <a class="nav-link" href="Soutenir.html">Soutenir</a>
           </li>
       </ul>
     </div>
@@ -53,7 +53,7 @@
 </nav>
 
 <section class="hero-section-toncompagnon position-relative">
-  <!-- Image du héros avec grands écrans -->
+ 
   <img src="images/hero_rencontretonCompagnon.png" alt="Hero Image" class="img-fluid w-100 d-none d-lg-block">
   <div class="container position-absolute top-0 start-0 h-100">
     <div class="row h-100 align-items-center">
@@ -68,7 +68,7 @@
   <div class="container ">
       <div class="row">
           <div class="col-12 col-md-4 d-flex justify-content-center ">
-              <div class="card shadow square-card   ">
+              <div class=" card shadow square-card   ">
               
                   <div class="card-body text-center ">
                       <i class="fas fa-dog fa-2x"></i>
@@ -98,83 +98,126 @@
   <section class="vedette-animaux py-5">
     <div class="col-12 col-md-8">
       <h2 class="text-left">Animaux en vedette</h2>
-  </div>
-    <div id="carouselFeaturedAnimals" class="carousel slide" data-bs-ride="carousel">
+    </div>
+    <div id="carouselResponsive" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
+        
         <div class="carousel-item active">
-          <div class="row">
-            <!-- Première carte -->
-            <div class="col-md-4 d-flex align-items-stretch">
-              <div class="card shadow h-100">
-                <img src="images/lisette.jpg" class="card-img-top" alt="Roger">
-                <div class="card-body-vedette p-2 p-md-3">
-                  <h5 class="card-title">Roger</h5>
-                  <p class="card-subtitle">Chat Européen, 6 mois.</p>
-                  <i class="fas fa-paw fa-2x float-end"></i>
-                </div>
+          <!-- Version mobile  -->
+          <img src="images/victor.jpg" class="d-block d-md-none w-100" alt="Image 1">
+          
+          <!-- Version desktop  -->
+          <div class="d-none d-md-flex justify-content-center">
+            <div class="card" style="width: 18rem;">
+              <img src="images/ubic.jpg" class="card-img-top" alt="Image 1">
+              <div class="card-body">
+                <h5 class="card-title">Titre 1</h5>
+                <p class="card-text">Description courte 1.</p>
               </div>
             </div>
-            <!-- Deuxième carte -->
-            <div class="col-md-4 d-flex align-items-stretch">
-              <div class="card shadow h-100">
-                <img src="images/victor.jpg" class="card-img-top" alt="Roger">
-                <div class="card-body-vedette p-2 p-md-3">
-                  <h5 class="card-title">Roger</h5>
-                  <p class="card-subtitle">Chat Européen, 6 mois.</p>
-                  <i class="fas fa-paw fa-2x float-end"></i>
-                </div>
+            <div class="card" style="width: 18rem;">
+              <img src="images/lisette.jpg" class="card-img-top" alt="Image 2">
+              <div class="card-body">
+                <h5 class="card-title">Titre 2</h5>
+                <p class="card-text">Description courte 2.</p>
               </div>
             </div>
-            <!-- Troisième carte -->
-            <div class="col-md-4 d-flex align-items-stretch">
-              <div class="card shadow h-100">
-                <img src="images/zucca.jpg" class="card-img-top" alt="Roger">
-                <div class="card-body-vedette p-2 p-md-3">
-                  <h5 class="card-title"> Roger</h5>
-                  <p class="card-subtitle">Chat Européen, 6 mois.</p>
-                  <i class="fas fa-paw fa-2x float-end"></i>
-                </div>
+            <div class="card" style="width: 18rem;">
+              <img src="images/fido.jpg" class="card-img-top" alt="Image 3">
+              <div class="card-body">
+                <h5 class="card-title">Titre 3</h5>
+                <p class="card-text">Description courte 3.</p>
               </div>
             </div>
           </div>
         </div>
-        <div class="carousel-item ">
-          <div class="row">
-            <!-- Quatrieme carte -->
-            <div class="col-12 col-md-4">
-              <div class="card shadow h-100">
-                <img src="images/freddy.jpg" class="card-img-top" alt="Roger">
-                <div class="card-body-vedette p-2 p-md-3">
-                  <h5 class="card-title">Rencontre Roger</h5>
-                  <p class="card-subtitle">Chat Européen, 6 mois.</p>
-                  <i class="fas fa-paw fa-2x float-end"></i>
-                </div>
+        <div class="carousel-item active">
+          <!-- Version mobile  -->
+          <img src="images/victor.jpg" class="d-block d-md-none w-100" alt="Image 1">
+          
+          <!-- Version desktop  -->
+          <div class="d-none d-md-flex justify-content-center ">
+            <div class="card" style="width: 18rem;">
+              <img src="images/ubic.jpg" class="card-img-top" alt="Image 1">
+              <div class="card-body">
+                <h5 class="card-title">Titre 1</h5>
+                <p class="card-text">Description courte 1.</p>
               </div>
             </div>
-            <!-- Cinquième carte -->
-            <div class="col-12 col-md-4">
-              <div class="card shadow h-100">
-                <img src="images/ubic.jpg" class="card-img-top" alt="Roger">
-                <div class="card-body-vedette p-2 p-md-3">
-                  <h5 class="card-title">Rencontre Roger</h5>
-                  <p class="card-subtitle">Chat Européen, 6 mois.</p>
-                  <i class="fas fa-paw fa-2x float-end"></i>
-                </div>
+            <div class="card" style="width: 18rem;">
+              <img src="images/lisette.jpg" class="card-img-top" alt="Image 2">
+              <div class="card-body">
+                <h5 class="card-title">Titre 2</h5>
+                <p class="card-text">Description courte 2.</p>
               </div>
             </div>
-            <!-- Sixieme carte -->
-            <div class="col-12 col-md-4">
-              <div class="card shadow h-100">
-                <img src="images/fido.jpg" class="card-img-top" alt="Roger">
-                <div class="card-body-vedette p-2 p-md-3">
-                  <h5 class="card-title">Rencontre Roger</h5>
-                  <p class="card-subtitle">Chat Européen, 6 mois.</p>
-                  <i class="fas fa-paw fa-2x float-end"></i>
-                  <i></i>
-                </div>
+            <div class="card" style="width: 18rem;">
+              <img src="images/fido.jpg" class="card-img-top" alt="Image 3">
+              <div class="card-body">
+                <h5 class="card-title">Titre 3</h5>
+                <p class="card-text">Description courte 3.</p>
               </div>
             </div>
           </div>
+        </div>
+        <!-- Répétez le structure ci-dessus pour chaque groupe d'images/cartes supplémentaire -->
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselResponsive" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselResponsive" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      </button>
+    </div>
+    <!-- <div id="carouselFeaturedAnimals" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+            <div class="card-vedette shadow h-100">
+              <div class="img-wrapper">
+                <img src="images/lisette.jpg" class="card-img-top" alt="Roger">
+              </div>
+              <div class="card-body-vedette p-2 p-md-3">
+                <h5 class="card-title">Roger</h5>
+                <p class="card-subtitle">Chat Européen, 6 mois.</p>
+                <i class="fas fa-paw fa-2x float-end"></i>
+              </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="card-vedette shadow h-100">
+              <div class="img-wrapper">
+                <img src="images/massaya.jpg" class="card-img-top" alt="Roger">
+              </div>
+              <div class="card-body-vedette p-2 p-md-3">
+                <h5 class="card-title">Roger</h5>
+                <p class="card-subtitle">Chat Européen, 6 mois.</p>
+                <i class="fas fa-paw fa-2x float-end"></i>
+              </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="card-vedette shadow h-100">
+              <div class="img-wrapper">
+                <img src="images/victor.jpg" class="card-img-top" alt="Roger">
+              </div>
+              <div class="card-body-vedette p-2 p-md-3">
+                <h5 class="card-title">Roger</h5>
+                <p class="card-subtitle">Chat Européen, 6 mois.</p>
+                <i class="fas fa-paw fa-2x float-end"></i>
+              </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="card-vedette shadow h-100">
+              <div class="img-wrapper">
+                <img src="images/flambo.jpg" class="card-img-top" alt="Roger">
+              </div>
+              <div class="card-body-vedette p-2 p-md-3">
+                <h5 class="card-title">Roger</h5>
+                <p class="card-subtitle">Chat Européen, 6 mois.</p>
+                <i class="fas fa-paw fa-2x float-end"></i>
+              </div>
+            </div>
         </div>
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselFeaturedAnimals" data-bs-slide="prev">
@@ -185,12 +228,12 @@
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
-    </div>
+    </div> -->
   </section>
   
   <section class="procedure">
     <div class="container procedure p-3 mb-5 ">
-      <h2 class="text-center">Notre Procédure</h2> <!-- Titre centré horizontalement avec le texte "Notre Procédure" -->
+      <h2 class="text-center">Notre Procédure</h2> 
       <div class="row text-center">
     </div>
         
@@ -198,17 +241,17 @@
       <div class="container w-75   pb-2  ">
       <div class="row text-center">
         <div class="col-12 col-md-4 d-flex flex-column justify-content-center align-items-center">
-          <i class="fa-solid fa-phone-volume fa-3x  icone "></i>
+          <i class="fa-solid fa-phone-volume fa-3x  icone-procedure "></i>
           <h3 class="procedure pt-4">Trouve ton compagnon</h3>
           <p class="procedure text-center pt-3 ">Contacte-nous pour avoir des informations sur l’animal de ton choix.</p>
         </div>
         <div class="col-12 col-md-4 d-flex flex-column justify-content-center align-items-center">
-          <i class="fa-solid fa-calendar fa-3x  icone "></i>
+          <i class="fa-solid fa-calendar fa-3x  icone-procedure "></i>
           <h3 class="procedure pt-4 ">Rencontre ton compagnon</h3>
           <p class="procedure text-center pt-3">Prend rendez-vous pour rencontrer peut être votre futur compagnon pour la vie.</p>
         </div>
         <div class="col-12 col-md-4 d-flex flex-column justify-content-center align-items-center">
-          <i class="fa-solid fa-home fa-3x  icone"></i>
+          <i class="fa-solid fa-home fa-3x  icone-procedure"></i>
           <h3 class="procedure pt-4">Sa nouvelle maison</h3>
           <p class="procedure text-center pt-3  ">Accueille ton nouveau compagnon  dans sa nouvelle maison.</p>
         </div>
@@ -216,22 +259,23 @@
     </div>
     </div>
   </section>
+  
   <section class="animaux-adoption py-5">
-
       <div class="container">
         <div class="row align-items-center justify-content-between">
-          <h2 class="mb-4 text-left col">Animaux pour l'adoption</h2>
-          <div class="dropdown col text-end pe-4">
-            
-              Filtrer <span class="fa fa-caret-down"></span>
-            </div>
+          <h2 class="text-left ">Animaux pour l'adoption</h2>
+        
+          <div class="dropdown col-12 col-md-4 d-flex pe-4">
+            Filtrer <span class="fa fa-caret-down text-left"></span>
+          </div>
+          <div>
             <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="filterMenu">
               <li><a class="dropdown-item" href="#">Chiens</a></li>
               <li><a class="dropdown-item" href="#">Chats</a></li>
               <li><a class="dropdown-item" href="#">Oiseaux</a></li>
               <li><a class="dropdown-item" href="#">Rongeurs</a></li>
               <li><a class="dropdown-item" href="#">Reptiles</a></li>
-              <!-- Ajoutez davantage de catégories ici si nécessaire -->
+              
             </ul>
           </div>
         </div>
@@ -240,14 +284,13 @@
         <!-- Carte d'animal 1 -->
         <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
           <div class="card text-center">
-            <!-- <div class="card-img-container" style="padding-top:55%"></div> -->
             <div style="height: 400px; overflow: hidden;">
-            <img src="images/fido.jpg" class="card-img-top position-absolute " alt="Nom de l'animal" style="top:0; left:0; width: 100%; height: 100%; object-fit: cover">
-          </div>
+              <img src="images/fido.jpg" class="card-img-top position-absolute " alt="Nom de l'animal" style="top:0; left:0; width: 100%; height: 100%; object-fit: cover">
+            </div>
             <div class="card-adoption p-0">
               <div class="card-footer w-100 text-center position-absolute bottom-0 start-0  custom-footer">
                 <h5 class="card-title d-inline">Nom de l'animal</h5>
-                <i class="fa-solid fa-mars float-end me-2"></i> <!-- Utilisez fa-venus pour le symbole féminin -->
+                <i class="fa-solid fa-mars float-end me-2"></i> 
               </div>
             </div>
           </div>
@@ -256,14 +299,14 @@
         <!-- Carte d'animal 2 -->
         <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
           <div class="card text-center">
-            <!-- <div class="card-img-container" style="padding-top:55%"></div> -->
+            
             <div style="height: 400px; overflow: hidden;">
             <img src="images/fido.jpg" class="card-img-top position-absolute " alt="Nom de l'animal" style="top:0; left:0; width: 100%; height: 100%; object-fit: cover">
           </div>
             <div class="card-adoption p-0">
               <div class="card-footer w-100 text-center position-absolute bottom-0 start-0 custom-footer">
                 <h5 class="card-title d-inline">Nom de l'animal</h5>
-                <i class="fa-solid fa-mars float-end me-2"></i> <!-- Utilisez fa-venus pour le symbole féminin -->
+                <i class="fa-solid fa-mars float-end me-2"></i> 
               </div>
             </div>
           </div>
@@ -271,14 +314,13 @@
         <!-- Carte d'animal 3 -->
         <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
           <div class="card text-center">
-            <!-- <div class="card-img-container" style="padding-top:55%"></div> -->
             <div style="height: 400px; overflow: hidden;">
             <img src="images/fido.jpg" class="card-img-top position-absolute " alt="Nom de l'animal" style="top:0; left:0; width: 100%; height: 100%; object-fit: cover">
           </div>
             <div class="card-adoption p-0">
               <div class="card-footer w-100 text-center position-absolute bottom-0 start-0 custom-footer">
                 <h5 class="card-title d-inline">Nom de l'animal</h5>
-                <i class="fa-solid fa-mars float-end me-2"></i> <!-- Utilisez fa-venus pour le symbole féminin -->
+                <i class="fa-solid fa-mars float-end me-2"></i> 
               </div>
             </div>
           </div>
@@ -286,15 +328,13 @@
         <!-- Carte d'animal 4 -->
         <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
           <div class="card text-center">
-            <!-- <div class="card-img-container" style="padding-top:55%"></div> -->
             <div style="height: 400px; overflow: hidden;">
             <img src="images/fido.jpg" class="card-img-top position-absolute " alt="Nom de l'animal" style="top:0; left:0; width: 100%; height: 100%; object-fit: cover">
           </div>
             <div class="card-adoption p-0">
               <div class="card-footer w-100 text-center position-absolute bottom-0 start-0  custom-footer">
                 <h5 class="card-title d-inline">Fido</h5>
-                <i class="fa-solid fa-mars float-end me-2"></i> <!-- Utilisez fa-venus pour le symbole féminin -->
-              </div>
+                <i class="fa-solid fa-mars float-end me-2"></i> 
             </div>
           </div>
         </div>
@@ -334,5 +374,10 @@
   
   
     </footer>
+
+    
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
