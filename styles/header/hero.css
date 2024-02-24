@@ -1,0 +1,91 @@
+/* hero en general */
+.title-hero-banner span{
+    color: var(--primary-color);
+}
+.text-hero-banner{
+    font-size: 20px;
+    padding-top: 20px;
+}
+@media screen and (max-width: 576px) {
+    .text-hero-banner{
+        padding-top: 0;
+        font-size: 16px;
+    }
+    
+}
+@media screen and (max-width: 576px) {
+    .hero-section {
+        height: 500px;
+           
+    }
+    
+}
+.hero-banner-content{
+    padding: 150px 50px;
+}
+
+.btn-hero{
+    border: solid 1 px var(--primary-color);
+    background-color: var(--primary-color);
+    border-radius: 28px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-border-radius: 28px;
+    -moz-border-radius: 28px;
+    -ms-border-radius: 28px;
+    -o-border-radius: 28px;
+    color: white;
+    margin-left: 10px;
+    white-space: nowrap;
+}
+
+.hero-section {
+    position: relative;
+    padding-top: 200px; /* Adjust the padding to fit your image */
+    padding-bottom: 200px; /* Adjust the padding to fit your image */
+    background-color: #f3f3f3; /* Fallback color */
+    
+  } 
+  
+  .hero-section img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    object-fit: cover; /* This will cover the entire section with your image */
+  }
+
+/* hero accueil */
+
+.hero-section-accueil{
+    margin-top: 150px;
+    background-image: url("../../images/hero_accueil.png");
+    background-position: top right;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+/* hero a propos */
+
+.hero-banner-content-a-propos{
+    padding: 250px 0 500px 0;
+    margin-left: 50px;
+}
+.text-accueil{
+    padding-top: 10px;
+}
+@media screen and (max-width: 576px) {
+    .text-accueil{
+        padding-top: 0;
+    }
+    
+}
+@media (max-width: 992px) {
+    .hero-section-toncompagnon + .animal-types .container {
+      margin-top: 300px; /* Adjust the top margin to push the container down in mobile version */
+    }
+  }
+

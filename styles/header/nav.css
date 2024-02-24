@@ -1,0 +1,28 @@
+.nav-item {
+    margin-left: 80px;   
+}
+
+.nav-link, .nav-item{
+    color: #000000;
+    opacity: 1;
+}
+a.nav-link:hover {
+    color: var(--primary-color); 
+  }
+
+  navbar-toggler-icon{
+    color: var(--primary-color);
+  }
+
+.title-hero-banner{
+    font-family: 'Kids Zona', sans-serif;
+    font-size: 96px;
+}
+
+@media screen and (max-width: 576px) {
+    .title-hero-banner{
+        font-size: 60px;
+        padding-top: 60px;
+    }
+    
+}

@@ -1,0 +1,525 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url("fonts/Roboto-Regular.ttf");
+}
+:root {
+    --primary-color: #F6BA4D; 
+    --secondary-color: #FDFBF5; 
+    
+    --text-color: #010101; 
+   --card-shadow: #fffff;
+  }
+
+body{
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+body > section {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+h1{
+    font-size: 96px;
+}
+@media screen and (max-width: 576px) {
+    h1{
+        font-size: 60px;
+    } 
+}
+
+h2{
+    font-size: 40px;
+}
+@media screen and (max-width: 576px) {
+    h2{
+        font-size: 25px;
+    }
+}
+
+h3{
+        font-size: 20px;
+    }
+    @media screen and (max-width: 576px) {
+        h3{
+            font-size: 16px;
+        }
+    }
+
+.procedure, .adopt-pet, .container, .actuality  {
+    width: 100%;
+    max-width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: auto;
+    margin-left: auto;
+    
+  }
+/* 
+  .procedure, .adopt-pet, .actuality  {
+    background-color: #ffffff;
+
+  } */
+
+/* section procedure */
+.icone-procedure{
+    color: var(--primary-color);
+} 
+.procedure{
+  background-color: var(--secondary-color);
+}
+
+/* .title-hero-banner span{
+    color: var(--primary-color);
+} */
+/* .text-hero-banner{
+    font-size: 20px;
+    padding-top: 20px;
+} */
+
+/* @media screen and (max-width: 576px) {
+    .text-hero-banner{
+        padding-top: 0;
+        font-size: 16px;
+    }
+    
+} */
+
+
+/* section a propos de nous */
+.text-justify{
+  text-align: justify;
+}
+
+
+.hero-section-a-propos {
+
+    margin-top: 150px;
+    background-image: url("../images/hero_apropos.png");
+    background-position: top right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+
+/* .hero-section-accueil{
+    margin-top: 150px;
+    background-image: url("../images/hero_accueil.png");
+    background-position: top right;
+    background-size: cover;
+    background-repeat: no-repeat;
+} */
+
+/* .hero-banner-content{
+    padding: 150px 50px;
+} */
+/* .hero-banner-content-a-propos{
+    padding: 250px 0 500px 0;
+    margin-left: 50px;
+} */
+
+/* @media screen and (max-width: 576px) {
+    .hero-section {
+        height: 500px;
+           
+    }
+    
+} */
+
+
+  
+/* .btn-hero{
+    border: solid 1 px var(--primary-color);
+    background-color: var(--primary-color);
+    border-radius: 28px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-border-radius: 28px;
+    -moz-border-radius: 28px;
+    -ms-border-radius: 28px;
+    -o-border-radius: 28px;
+    color: white;
+    margin-left: 10px;
+    white-space: nowrap;
+} */
+/* .text-accueil{
+    padding-top: 10px;
+} */
+
+/* @media screen and (max-width: 576px) {
+    .text-accueil{
+        padding-top: 0;
+    }
+    
+} */
+
+/* .icon-autres-activite{
+   width: 40px;
+} */
+
+
+
+/* card animaux vedette */
+.icon-card{
+    color: var(--primary-color);
+    font-size: 35px;
+}
+/* .card-service-text{
+    text-align: center;
+    
+    
+} */
+/* .card{
+    box-shadow: var(--card-shadow) 1px  1px 1px 1px;
+    background-color: var(--secondary-color);
+    width: 2rem;
+    margin: auto;
+    float: none;
+    width: 90%; 
+    height: auto; 
+} */
+.card-body span{
+    display: inline-block;
+    width: 51px;
+    height: 51px;
+}
+
+.card-body span img, .card-body h5{
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+.card-img-top{
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+}
+
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    border:none;
+}
+
+
+
+.image-overlay-container {
+    position: relative;
+    text-align: left;
+  }
+
+.image-overlay-content {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); 
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+  }
+
+.d-flex.align-items-stretch {
+    justify-content: center;
+  }
+  .icon-box-color {
+    color: var(--primary-color)
+}
+  .icon-box {
+   
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px; 
+    position: relative;
+    top: 20px;
+  }
+  .rounded-10 {
+    border-radius: 10px;
+  }
+  .max-width-400 {
+    max-width: 400px;
+  }
+ .name-pet{
+    color:var(--primary-color);
+    font-family: kids zona;
+    font-size: 32px;
+    display: inline-block; 
+    
+  }
+  .fa-venus, .fa-mars {
+    position: absolute;
+    bottom: 20px;
+    right: 30px;
+    font-size: 25px;
+}
+
+.card-body{
+    
+    background-color: var(--secondary-color);
+    width: 80%;
+    margin: auto;
+    
+}
+.date{
+    color:var(--primary-color);
+    font-style: bold;
+}
+.card-actuality{
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: var(--secondary-color);
+    width: 100%;
+    margin: auto;    
+}
+.partenaire{
+    background-color: var(--secondary-color);
+}
+/* .hero-section-toncompagnon {
+    position: relative;
+ 
+    margin-top: 2rem;
+  }
+  
+  .hero-section-toncompagnon img {
+    width: 100vw;
+    height: auto; 
+  }  */
+
+
+   
+ 
+
+
+ /* section animaux pour adoption pageADN */
+.container-adoption{
+    background-color: #ffffff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+
+ }
+ /* section animaux pour adoption pageADN bouton et section */
+ .adopt-pet{
+    padding: 0 2rem;
+ }
+
+
+ /* carousel partenaires */
+ .carousel-control-next-icon, .carousel-control-prev-icon {
+    background-color: var(--primary-color);
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+.fa-arrow-right{
+    margin-left: 10px;
+}
+/* .custom-logo{
+    width: 50%;
+    height: auto;
+}
+.reseaux-sociaux{
+    color: var(--primary-color);
+}
+a.text-footer:hover {
+    color: var(--primary-color); 
+  }
+.text-footer {
+    color:var(--text-color); 
+  } */
+
+
+
+  .statistique{
+    background-color:var(--secondary-color);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    min-height: 200px; 
+    margin-bottom: 10rem; 
+    margin-top: 10rem;
+    bottom: -20px;
+    width: 100%;
+    padding:2rem; 
+    
+   
+    
+  }
+
+  .contenaire{
+    background-image: url('images/photo_trouvetoncompagnon.png');
+    
+  }
+ 
+   
+  /* .text-copyright{
+    font-style: italic;
+    font-size: smaller;
+    color: var(--primary-color);
+
+  } */
+  /* .custom-footer {
+    padding: 2rem 0; 
+    
+  } */
+ 
+  /* .vedette-animaux .card {
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .vedette-animaux .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .vedette-animaux .card-img-top {
+    height: 30rem; 
+    object-fit: cover;
+    width: max-10px;
+  }
+  
+  .vedette-animaux .card-title {
+    margin-bottom: 0.25rem; 
+  }
+  
+  .vedette-animaux .card-subtitle {
+    color:var( #FDFBF5); 
+  } */
+
+  /* .animaux-adoption .card-footer {
+    background-color: var(--secondary-color);
+      
+  } */
+  /* .hero-section {
+    position: relative;
+    padding-top: 200px; 
+    padding-bottom:200px; 
+    background-color:#f3f3f3;
+  } 
+  
+  .hero-section img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    object-fit: cover;
+  } */
+  .card {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #FDFBF5;
+    transition: transform 0.2s ease-in-out;
+}
+.card:hover {
+    transform: translateY(-5px);
+}
+
+
+/* .card {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #FDFBF5;
+  transition: transform 0.2s ease-in-out;
+} */
+
+
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+
+
+
+/* page troutoncompagnon */
+@media (min-width: 768px) {
+  .animal-types {
+    
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 10;  
+    }
+  }
+
+  .square-card {
+      width: 250px; /* Taille fixe pour les écrans plus larges */
+      height: 250px; /* Hauteur fixe pour garder la forme carrée */
+      margin-bottom: 1rem;
+      
+  }
+
+  .button-container {
+      position: absolute;
+      top: 0%;
+      /*Positionner juste endessous duhero*/left: 20%;
+      /*Centrer horizontalement*/transform: translateX(80%);
+      display: flex;
+      justify-content: center;
+      width: 50%;
+      -webkit-transform: translateX(-50%);
+      -moz-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      -o-transform: translateX(-50%);
+}
+
+  /* icone card animaux adopte dans accueil */
+  .card-body i {
+    font-size: 1rem;
+  } 
+
+
+   .card-title {
+    color: #000;
+    font-size: 1rem;
+    font-weight: regular;
+    margin-bottom: 0.5rem;
+    text-align: center;
+  }
+ 
+ .card-body-vedette{
+ 
+    color:#000;
+    
+ }
+
+ .card-adoption .card-title{
+    color:#000;
+    font-family: kids zona;
+    font-size: 32px;
+    display: inline-block;
+
+ }
+ .dropdown{
+    color:var(--primary-color);
+    font-size: 32px;
+    display: inline-block;
+    
+ }
+
+
+
+/* actualites */
+
+
+.card-actualités{
+ 
+    color:#000;
+    font-family: kids zona;
+    font-size: 32px;
+    display: inline-block;
+
+ 
+}
+
+/* @media (max-width: 992px) {
+  .hero-section-toncompagnon + .animal-types .container {
+    margin-top: 300px; 
+  }
+} */

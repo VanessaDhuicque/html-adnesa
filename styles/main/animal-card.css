@@ -1,0 +1,82 @@
+:root {
+    --primary-color: #F6BA4D; 
+    --secondary-color: #FDFBF5; 
+    
+    --text-color: #010101; 
+   --card-shadow: #fffff;
+  }
+
+  /* page ADN */
+
+.card-service{
+    height: 150px;
+    width: 350px;
+}
+.card-service-text{
+    text-align: center;
+    text-justify: center;
+    font-size: 18px;
+    
+    
+    
+}
+.card-service-title{
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+.card-body-service .fa-solid{
+    font-size: 2em; 
+    color: var(--primary-color);
+}
+/* page ADN section adoption */
+.card-body-adopt i {
+    font-size: 2rem;
+    padding-left: 5rem;
+  } 
+
+
+/* page trouvetoncompagnon */
+.vedette-animaux .card {
+    transition: transform 0.5s ease-in-out;
+    -webkit-transition: transform 0.5s ease-in-out;
+    -moz-transition: transform 0.5s ease-in-out;
+    -ms-transition: transform 0.5s ease-in-out;
+    -o-transition: transform 0.5s ease-in-out;
+}
+  
+  .vedette-animaux .card:hover {
+    transform: translateY(-20px);
+    -webkit-transform: translateY(-20px);
+    -moz-transform: translateY(-20px);
+    -ms-transform: translateY(-20px);
+    -o-transform: translateY(-20px);
+}
+  
+  .vedette-animaux .card-img-top {
+    height: 30rem; 
+    object-fit: cover;
+    width: max-10px;
+  }
+  
+  .vedette-animaux .card-title {
+    margin-bottom: 2rem; 
+  }
+  
+  .vedette-animaux .card-subtitle {
+    color:var( #FDFBF5); 
+  }
+  .card-body-vedette{
+ 
+    color:#000;
+    
+ }
+
+  .animaux-adoption .card-footer {
+    background-color: var(--secondary-color);
+      
+  }
+
+
+           
+                

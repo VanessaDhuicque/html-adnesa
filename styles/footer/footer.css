@@ -1,0 +1,31 @@
+.custom-logo{
+    width: 50%;
+    height: auto;
+}
+.reseaux-sociaux{
+    color: var(--primary-color);
+}
+a.text-footer:hover {
+    color: var(--primary-color); 
+  }
+.text-footer {
+    color:var(--text-color); 
+  }
+
+.text-copyright{
+    font-style: italic;
+    font-size: smaller;
+    color: var(--primary-color);
+
+}
+.custom-footer {
+    padding: 2rem 0; 
+    
+}
+
+.text-copyright{
+    font-style: italic;
+    font-size: smaller;
+    color: var(--primary-color);
+
+}
