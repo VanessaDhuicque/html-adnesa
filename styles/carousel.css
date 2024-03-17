@@ -32,7 +32,7 @@
   transform: translateX(0);
 }
 
-.card-img-top{
+.carouse-item .card-img-top{
     width: 90%;
     border-radius: 1rem;
     margin-top: 1rem;

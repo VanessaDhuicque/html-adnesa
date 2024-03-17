@@ -9,76 +9,205 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="stylesheet" href="styles/header.css">
-    <link rel="stylesheet" href="styles/nav.css">
+    <link rel="stylesheet" href="styles/header/hero.css">
+    <link rel="stylesheet" href="styles/header/nav.css">
+    <link rel="stylesheet" href="styles/footer/footer.css">
+    <link rel="stylesheet" href="styles/main/animal-card.css">
+    <link rel="stylesheet" href="styles/carousel.css">
     <link rel="shortcut icon" href="images/icon_autres_activite.png">
     <title>Arche de Ninie</title>
   </head>
   <body class="container-fluid ">
 
-<nav class="navbar navbar-expand-lg bg-white fixed-top">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">
-      <img src="images/logo_couleur_sstexte.png" alt="Logo" style="height: 80px;"> 
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
-            data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" 
-            aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarResponsive">
-      <ul class="navbar-nav ms-auto"> 
-        <li class="nav-item active">
-          <a class="nav-link" href="Accueil.html">Arche de Ninie</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="a propos.html">L'association</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="Trouve ton compagnon.html">Trouve ton compagnon</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="actualites.html">Actualités</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="Soutenir.html">Soutenir</a>
-          </li>
-      </ul>
-    </div>
-  </div>
- 
-
-</nav>
-<main class="fluide">
-<section>
-
-  <div class="container mt-5">
-    <h2 class="text-center mb-4">Les actualités et nos communiqués</h2>
-    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
-        <!-- Carte 1 -->
-        <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
-          <div class="card-actualites text-center">
-            <!-- <div class="card-img-container" style="padding-top:55%"></div> -->
-            <div style="height: 200px; overflow: hidden;">
-            <img src="images/fido.jpg" class="card-img-top position-absolute " alt="Nom de l'animal" style="top:0; left:0; width: 100%; height: 100%; object-fit: cover">
+    <nav class="navbar navbar-expand-lg bg-white fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="images/logo_couleur_sstexte.png" alt="Logo" style="height: 80px;"> 
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+                data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" 
+                aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ms-auto"> 
+            <li class="nav-item active">
+              <a class="nav-link" href="Accueil.html">Arche de Ninie</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="a propos.html">L'association</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Trouve ton compagnon.html">Trouve ton compagnon</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="actualites.html">Actualités</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Soutenir.html">Soutenir</a>
+              </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section class="hero-section-actualites d-flex align-items-center">
+      <div class="container col-12">
+        <div class="row align-items-center text-actualites">
+          <div class="col-12 col-xl-6 g-5 text-center p-5 hero-banner-content-actualites">
+            <h1 class="title-hero-banner">L'<span> Actualité</span> sur nos compagnons</h1>
+            
+            <button class="p-3 px-5 btn btn-hero mt-3">
+              Soutenir <i class="fas fa-arrow-right"></i>
+            </button>
           </div>
-            <div class="card-adoption p-0">
-              <div class="card-footer w-100 text-center position-absolute bottom-0 start-0  custom-footer">
-                <h5 class="card-title d-inline">Nom de l'animal</h5>
-                <i class="fa-solid fa-mars float-end me-2"></i> <!-- Utilisez fa-venus pour le symbole féminin -->
+    
+        </div>
+      </div>
+    </section>    
+
+
+
+<main class="fluide">
+<section class="actualites">
+
+  <div class="container py-5">
+    <div class="row mb-4 justify-content-end">
+      <div class="col-md-6 ">
+        <h2 class="section-title">Les actualités et nos communiqués</h2>
+      </div>
+    </div>
+
+
+
+    <div class="row justify-content-between"> 
+        <div class="col-12 col-lg-6">
+      
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" placeholder="Recherche..." aria-label="Recherche">
+          <button class="btn btn-outline-secondary" type="button" id="button-addon2"><i class="fas fa-search"></i></button>
+        </div>
+        <select class="form-select mb-3" aria-label="Liste déroulante">
+          <option selected>THEMATIQUES ACTUALITES</option>
+          <option value="1">Conseils</option>
+          <option value="2">Evenements</option>
+          <option value="3">Sauvetages</option>
+          <option selected>THEMATIQUES COMMUNIQUE DE PRESSE</option>
+          <option value="2">Evenements</option>
+          <option value="3">Réactions</option>
+        </select>
+      </div>
+      <div class="col-12 col-lg-6 ">
+      <div class="row ">
+        <div class="col-md-6">
+      
+          <!-- Carte personnalisée 2 -->
+          <div class="card custom-card-actualite my-2">
+            <img src="images/article_1.png" class="animal-card-img-top my-1 mx-auto" alt="...">
+            <div class="card-body-align-left text-start p-2 m-0 ">
+              <small class="text-muted">02.02.2024</small>
+              <p class="card-text">questions avant l'adoption</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <!-- Carte personnalisée 3 -->
+          <div class="card custom-card-actualite my-2">
+            <img src="images/article_6.png" class="animal-card-img-top my-1 mx-auto" alt="...">
+            <div class="card-body-align-left text-start p-2 m-0 ">
+              <small class="text-muted">03.03.2024</small>
+              <p class="card-text">voyager avec son animal</p>
+            </div>
+          </div>
+        </div>
+      </div>
+        <div class="row">
+          <div class="col-md-6">
+            <!-- Carte personnalisée 2 -->
+            <div class="card custom-card-actualite my-2">
+              <img src="images/article_5.png" class="animal-card-img-top my-1 mx-auto" alt="...">
+              <div class="card-body-align-left text-start p-2 m-0 ">
+                <small class="text-muted">02.02.2024</small>
+                <p class="card-text">Bonne Année 2024!</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <!-- Carte personnalisée 3 -->
+            <div class="card custom-card-actualite my-2">
+              <img src="images/article_3.png" class="animal-card-img-top my-1 mx-auto" alt="...">
+              <div class="card-body-align-left text-start p-2 m-0 ">
+                <small class="text-muted">03.03.2024</small>
+                <p class="card-text">Alerte canicule!</p>
               </div>
             </div>
           </div>
         </div>
-        <!-- Carte 2 -->
         
-        <!-- D'autres cartes peuvent être ajoutées ici -->
+          
+       
+  </div>
+
+  
+
+  <div class="container py-5">
+    <div class="row align-items-start ">
+      <!-- Colonne pour l'image -->
+      <div class=" chat_actualites col-md-6  "> 
+      
+        <img src="images/chat_actualites.png" alt="chat dans une caisse en bois" class="img-fluid d-none d-md-block">
+      </div>
+   
+
+
+      <div class="col-md-6">
+        <h2 class="section-title">Autres articles</h2>
+        <div class="row">
+          <div class="col-md-6">
+            <!-- Carte 1 -->
+            <div class="card custom-card-actualite my-2">
+              <img src="images/article_1.png" class="animal-card-img-top my-1 mx-auto" alt="...">
+              <div class="card-body-align-left text-start p-2 m-0">
+                <small class="text-muted">02.02.2024</small>
+                <p class="card-text">questions avant l'adoption</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <!-- Carte 2 -->
+            <div class="card custom-card-actualite my-2">
+              <img src="images/article_6.png" class="animal-card-img-top my-1 mx-auto" alt="...">
+              <div class="card-body-align-left text-start p-2 m-0">
+                <small class="text-muted">03.03.2024</small>
+                <p class="card-text">voyager avec son animal</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <!-- Carte 2 -->
+            <div class="card custom-card-actualite my-2">
+              <img src="images/article_6.png" class="animal-card-img-top my-1 mx-auto" alt="...">
+              <div class="card-body-align-left text-start p-2 m-0">
+                <small class="text-muted">03.03.2024</small>
+                <p class="card-text">voyager avec son animal</p>
+              </div>
+            </div>
+          </div>
+        
+        <div class="col-md-6">
+          <!-- Carte personnalisée 3 -->
+          <div class="card custom-card-actualite my-2">
+            <img src="images/article_3.png" class="animal-card-img-top my-1 mx-auto" alt="...">
+            <div class="card-body-align-left text-start p-2 m-0 ">
+              <small class="text-muted">03.03.2024</small>
+              <p class="card-text">Alerte canicule!</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-</div>
-</div>
-</section>
+  </section>
 </main>
-<footer class="py-4 ">
+<footer class="py-4">
   <div class="footer">
     <div class="row align-items-center">
       <div class="d-none d-md-block col-md-2">
@@ -88,7 +217,7 @@
         <p class="text-justify text-center text-wrap text-footer m-md-5 pt-2 pt-md-4">Explorez toutes les ressources disponibles en matière de soins aux animaux de compagnie. Faites un don, devenez bénévole et sauvez un animal de compagnie.</p>
       </div>
       <div class="col-md-6">
-        <div class="d-flex flex-column flex-md-row  justify-content-center align-items-center mb-auto mt-3 m-md-5 pb-md-4  ">
+        <div class="d-flex flex-column flex-md-row  justify-content-center align-items-center mb-auto mt-3 m-md-5 pb-md-4">
           <a href="#" class="mx-2 text-footer">Mentions légales</a>
           <a href="#" class="mx-2 text-footer">Politique de cookies</a>
           <a href="#" class="mx-2 text-footer">Politique de confidentialité</a>

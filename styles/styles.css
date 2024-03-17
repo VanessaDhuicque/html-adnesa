@@ -472,10 +472,12 @@ a.text-footer:hover {
 }
 
   /* icone card animaux adopte dans accueil */
-  .card-body i {
-    font-size: 1rem;
+  /* .card-body i {
+    font-size: 3rem;
+    color: #F6BA4D;
+    text-align: center;
   } 
-
+  
 
    .card-title {
     color: #000;
@@ -483,7 +485,7 @@ a.text-footer:hover {
     font-weight: regular;
     margin-bottom: 0.5rem;
     text-align: center;
-  }
+  } */
  
  .card-body-vedette{
  
@@ -515,10 +517,10 @@ a.text-footer:hover {
     color:#000;
     font-family: kids zona;
     font-size: 32px;
-    display: inline-block;
 
  
 }
+
 
 /* @media (max-width: 992px) {
   .hero-section-toncompagnon + .animal-types .container {
@@ -558,5 +560,30 @@ a.text-footer:hover {
 FIN CAROUSEL */
 
 .card {
-  margin: 0 10px; /* Ajoute un peu d'espace entre les cartes */
+  margin: 0 10px; 
 }
+
+/* filtre */
+.form-select,
+.input-group {
+  background-color: var(--secondary-color);
+  border-radius: 0.25rem; /* Assurez-vous que le rayon de la bordure est défini pour les coins arrondis */
+  margin-bottom: 1rem; /* Espace entre les éléments de formulaire */
+}
+.section-title {
+  font-size: 2rem; /* Taille de police pour le titre */
+  color: #333; /* Couleur de police pour le titre */
+  font-weight: bold; /* Graisse de la police pour le titre */
+  margin-bottom: 1rem; /* Espacement en dessous du titre */
+  text-align: left; /* Centrer le titre si nécessaire */
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 1.5rem; /* Taille de police plus petite pour les petits écrans */
+  }
+}
+.chat_actualites {
+  
+}
+

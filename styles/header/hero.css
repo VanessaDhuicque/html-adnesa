@@ -118,3 +118,21 @@
     transform: translateX(-50%);
     z-index: 10; 
   }
+  .hero-section-actualites{
+   
+    background-image: url("../../images/hero_actualites-1.png");
+    margin-top: 150px;
+    width: 100%;
+    height: auto;
+    background-position: top right;
+    background-size: cover;
+    background-repeat: repeat-y;
+    
+    
+}
+@media screen and (max-width: 576px) {
+    .text-actualites{
+        padding-top: 0;
+    }
+    
+}
